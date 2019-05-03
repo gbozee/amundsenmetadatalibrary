@@ -31,6 +31,7 @@ def get_proxy_client() -> BaseProxy:
             password = current_app.config[config.PROXY_PASSWORD]
 
             client = import_string(current_app.config[config.PROXY_CLIENT])
+            # import pdb; pdb.set_trace()
             _proxy_client = client(host=host, port=port, user=user, password=password)
 
     return _proxy_client

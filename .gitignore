@@ -16,3 +16,5 @@ venv3/
 .mypy_cache
 .pytest_cache
 
+# startup.bat
+.vscode
